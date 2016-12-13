@@ -1,0 +1,66 @@
+.feedback {
+  background: url("../img/background-feedback.png") center /cover no-repeat;
+
+  h2 {
+    color: $primary-light-color;
+  }
+
+  p {
+    color: $primary-light-color;
+  }
+
+  .feedback-icons {
+
+    li {
+      margin: 0 1%;
+    }
+
+    a {
+      width: 43px;
+      height: 43px;
+
+      .fa {
+        line-height: 43px;
+        font-size: 25px;
+      }
+
+      .fa-dribbble {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .feedback {
+    padding: 5% 0 5%;
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  .feedback {
+    padding: 9% 0 10%;
+
+    .feedback-wrapper {
+      width: 60%;
+      margin: 0 auto;
+      .feedback-icons {
+        float: right;
+        margin-top: -45px;
+      }
+
+      li {
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .feedback {
+    padding: 90px 0 150px;
+    .feedback-wrapper {
+      width: 830px;
+    }
+  }
+}

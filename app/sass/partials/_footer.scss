@@ -1,0 +1,48 @@
+.footer {
+  background-color: #3b434c;
+  padding: 25px 0;
+
+  .footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      font: 400 16px $font-primary;
+      color: $primary-light-color;
+    }
+
+    .footer-info {
+      width: 90%;
+    }
+
+    .footer-logo {
+      width: 90%;
+
+      img {
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .footer .footer-list {
+
+    .footer-info {
+      width: 49%;
+      padding-left: 5%;
+      text-align: left;
+    }
+
+    .footer-logo {
+      width: 49%;
+      padding-right: 5%;
+      text-align: right;
+    }
+  }
+}

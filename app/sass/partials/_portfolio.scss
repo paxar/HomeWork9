@@ -1,0 +1,22 @@
+
+.portfolio {
+  padding: 2% 0 3% 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio {
+    padding: 5% 0 6% 0;
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  .portfolio {
+    padding: 7% 0 10% 0;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .portfolio {
+    padding: 70px 0 100px 0;
+  }
+}

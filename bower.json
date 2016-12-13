@@ -6,12 +6,16 @@
     "Pavel Charchenko <paxar81@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/paxar/HomeWork9",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
-  ]
+    "tests",
+    "app/libs/"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
 }

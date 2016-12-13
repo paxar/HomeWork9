@@ -1,0 +1,60 @@
+.reviews {
+  background: url("../img/background-reviews.png") center /cover no-repeat;
+
+  .bx-wrapper {
+    margin: 0;
+  }
+}
+
+.reviews-list {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+
+  img {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+
+  p {
+    padding: 0 25px;
+    font: italic 20px/40px $font-primary;
+    color: $primary-light-color;
+  }
+
+  span {
+    display: block;
+    margin-bottom: 30px;
+    font: 600 18px $font-primary;
+    color: $primary-light-color;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews {
+    padding: 5% 0 5%;
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  .reviews {
+    padding: 7% 0 7%;
+    .reviews-list p {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 25px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .reviews {
+    padding: 90px 0 140px;
+    .reviews-list p {
+      width: 800px;
+      margin: 30px auto;
+    }
+  }
+}

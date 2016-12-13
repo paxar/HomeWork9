@@ -1,0 +1,56 @@
+.header {
+  padding: 5% 0;
+
+  .logo {
+    float: left;
+    margin: 0;
+    padding-left: 5%;
+  }
+
+  .nav {
+    float: right;
+    margin-top: 10px;
+    padding-right: 5%;
+
+    a {
+      text-decoration: none;
+      color: $primary-light-color;
+      font: 400 16px $font-primary;
+
+      span {
+        padding-right: 10px;
+        font: 400 16px $font-primary;
+        color: $primary-light-color;
+      }
+
+      .fa {
+        font-size: 20px;
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 2% 0;
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  .header {
+    .logo {
+      padding-left: 15px;
+    }
+    .nav {
+      padding-right: 15px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .header {
+    padding: 45px 0;
+  }
+}
