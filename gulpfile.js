@@ -10,12 +10,21 @@ var gulp       = require('gulp'), // Подключаем Gulp
     pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
     cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
     autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
+    plumber = require('gulp-plumber');  //не тормозим при ошибках
+    sourcemaps = require('gulp-sourcemaps');  //исходные пути SCSS
 
 gulp.task('sass', function(){ // Создаем таск Sass
-    return gulp.src('app/sass/**/*.sass') // Берем источник
+        return gulp.src('app/sass/**/*.scss') // Берем источник
+       .pipe(plumber(function(error) {
+                gutil.log(gutil.colors.red(error.message));
+                this.emit('end');
+            }))
+        .pipe(sourcemaps.init()) // подключаем sourcemaps
+        // .pipe(plumber())  // Не даем падать из за ошибок
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
-        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-        .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
+        .pipe(autoprefixer(['last 3 versions'], { cascade: true })) // Создаем префиксы
+        .pipe(sourcemaps.write('.')) // записываем sourcemaps
+        .pipe(gulp.dest('app/css')) // Выгружаем результаты в папку app/css
         .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 
@@ -46,7 +55,7 @@ gulp.task('css-libs', ['sass'], function() {
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
-    gulp.watch('app/sass/**/*.sass', ['sass']); // Наблюдение за sass файлами в папке sass
+    gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
 });
