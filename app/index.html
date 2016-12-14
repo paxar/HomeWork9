@@ -6,6 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/libs.css">
         <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/libs.min.js"></script>
+
+
+
+
+
+
+
     </head>
     <body>
 
@@ -19,39 +28,155 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Project name</a>
+                        <a class="navbar-brand" href="#">LOGO</a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li class="dropdown-header">Nav header</li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-                            <li><a href="../navbar-static-top/">Static top</a></li>
-                            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Search icon</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div><!--/.container-fluid -->
             </nav>
         </header>
 
-        <div class="block">
+        <section class="hero">
 
-        </div>
+            <!-- Карусель -->
+            <div id="myCarousel" class="carousel" data-ride="carousel" data-interval="false">
+                <!-- Индикаторы для карусели -->
+                <ol class="carousel-indicators">
+                    <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Слайды карусели -->
+                <div class="carousel-inner">
+                    <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+                    <div class="active item">
+                        <h2>Alecto is simple PSD Template</h2>
+                        <p>Nam varius accumsan elementum aliquam</p>
+                        <a href="#">BUTTON</a>
+
+
+                    </div>
+                    <!-- Слайд №2 -->
+                    <div class="item">
+                        <h2>Slide 2</h2>
+                        <div class="carousel-caption">
+                            <h3>Second slide label</h3>
+                            <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+                        </div>
+                    </div>
+                    <!-- Слайд №3 -->
+                    <div class="item">
+                        <h2>Slide 3</h2>
+                        <div class="carousel-caption">
+                            <h3>Third slide label</h3>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Навигация для карусели -->
+                <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
+
+
+        </section>
+
+        <section class="about">
+
+            <h2>About us</h2>
+            <div class="caption-line"></div>
+            <p>Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</p>
+
+            <ul class="about-list">
+                <li class="about-list-item">
+                    <div class="about-list-icon-wrapper">
+                        <i class="icon-rocket"></i>
+                    </div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</p>
+                </li>
+
+                <li class="about-list-item">
+                    <div class="about-list-icon-wrapper">
+                        <i class="icon-atom"></i>
+                    </div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</p>
+                </li>
+
+                <li class="about-list-item">
+                    <div class="about-list-icon-wrapper">
+                        <i class="icon-zig-zag-graphic"></i>
+                    </div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</p>
+                </li>
+
+                <li class="about-list-item">
+                    <div class="about-list-icon-wrapper">
+                        <i class="icon-graduation-hat"></i>
+                    </div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</p>
+                </li>
+            </ul>
+
+            <a href="#">Learn more</a>
+
+
+        </section>
+
+        <section class="info1">
+            <h2>Lorem ipsum</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor,
+                ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur enim
+                id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien. 
+            </p>
+            <a href="#">Learn more</a>
+        </section>
+
+        <section class="info2">
+            <h2>Dolor sit amet</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor,
+                ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur enim
+                id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.
+            </p>
+            <a href="#">Learn more</a>
+        </section>
+
+        <section class="reviews">
+
+        </section>
+
+        <section class="services">
+
+        </section>
+
+
+
+
         
     </body>
 </html>

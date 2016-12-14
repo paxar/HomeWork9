@@ -2,5 +2,7 @@
 node_modules/
 bower_components/
 app/libs/
+dist/
 .sass-cache
 *.css.map
+
