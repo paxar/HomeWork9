@@ -12,16 +12,21 @@ var gulp       = require('gulp'), // Подключаем Gulp
     autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
     plumber = require('gulp-plumber');  //не тормозим при ошибках
     sourcemaps = require('gulp-sourcemaps');  //исходные пути SCSS
+    notify = require("gulp-notify");
+
+    plumberErrorHandler = {
+        errorHandler: notify.onError({
+            title: 'Gulp',
+            message: 'Error: <%= error.message %>'
+        })
+    };
 
 gulp.task('sass', function(){ // Создаем таск Sass
         return gulp.src('app/sass/**/*.scss') // Берем источник
-       .pipe(plumber(function(error) {
-                gutil.log(gutil.colors.red(error.message));
-                this.emit('end');
-            }))
+       .pipe(plumber(plumberErrorHandler))
         .pipe(sourcemaps.init()) // подключаем sourcemaps
         // .pipe(plumber())  // Не даем падать из за ошибок
-        .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
+        .pipe(sass().on ('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 3 versions'], { cascade: true })) // Создаем префиксы
         .pipe(sourcemaps.write('.')) // записываем sourcemaps
         .pipe(gulp.dest('app/css')) // Выгружаем результаты в папку app/css
