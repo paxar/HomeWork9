@@ -1,0 +1,58 @@
+.icons {
+
+  .icon-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      width: 80%;
+      text-align: center;
+
+      .icon-wrapper {
+        display: block;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 20px;
+        border: 1px solid rgba(59, 67, 76, 0.3);
+        border-radius: 50%;
+        line-height: 150px;
+
+        img {
+          vertical-align: middle;
+        }
+      }
+      h3 {
+        font: 600 16px $font-primary;
+      }
+      p {
+        font: 400 14px/26px $font-primary;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .icons .icon-list li {
+    width: 40%;
+    p {
+      width: 70%;
+      margin: 10px auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  .icons {
+    padding: 85px 0;
+
+    .icon-list li {
+      width: 20%;
+      margin: 0 20px;
+      p {
+        width: 178px;
+      }
+    }
+  }
+}

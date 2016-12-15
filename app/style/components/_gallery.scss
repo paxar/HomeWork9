@@ -1,0 +1,193 @@
+//----------------------portfolio gallery-----------------
+.portfolio-gallery {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    width: 90%;
+    height: auto;
+    margin: 10px;
+
+    .portfolio-gallery-wrapper {
+      position: relative;
+      max-width: 360px;
+      margin: 0 auto;
+
+      &:hover .hover,
+      &:active .hover {
+        opacity: 1;
+      }
+
+      img {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+      }
+      .hover {
+        width: 100%;
+        max-width: 360px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        border-radius: 10px;
+        background-color: rgba(247, 96, 14, 0.8);
+        opacity: 0; //hover hide
+
+        h3 {
+          margin-top: 25%;
+          font: 600 25px $font-primary;
+          color: $primary-light-color;
+        }
+
+        p {
+          padding: 0 10px;
+          font: 400 14px/26px $font-primary;
+          color: $primary-light-color;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-gallery li {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  .portfolio-gallery li {
+    width: 28%;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .portfolio-gallery {
+    margin: 10px 0;
+    li {
+      width: 33%;
+      margin: 0 0 25px;
+    }
+  }
+}
+
+//-------------persons gallery -----------------
+
+.persons-list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+
+  > li {
+
+    .persons-list-wrapper {
+      width: 80%;
+      margin: 0 auto;
+
+      .persons-list-photo-wrapper {
+        width: 236px;
+        height: auto;
+
+        margin: 0 auto;
+
+        overflow: hidden;
+
+        @include transition(0.2s);
+
+        div {
+          //width: inherit;
+          width: 262px;
+          height: 5px;
+          display: none;
+          margin-top: -1px;
+          background-color: #f7600e;
+          border-radius: 2px;
+
+        }
+      }
+
+      img {
+        margin: 0 auto;
+        margin-top: 35px;
+        width: 236px;
+        height: auto;
+        border-radius: 10px;
+        @include transition(0.2s);
+      }
+
+      h3 {
+        color: $primary-dark-color;
+        font: 600 25px/10px $font-primary;
+        text-transform: uppercase;
+        @include transition(0.2s);
+      }
+
+      .fa.fa-facebook,
+      .fa.fa-twitter,
+      .fa.fa-google-plus {
+        background-color: #cccccc;
+        @include transition(0.2s);
+        &:hover {
+          background-color: $brand-color;
+        }
+      }
+
+      p {
+        margin-bottom: 20px;
+        color: $primary-dark-color;
+        font: 400 14px/26px $font-primary;
+        @include transition(0.2s);
+      }
+
+      h3,
+      p {
+        filter: opacity(20%);
+      }
+      //-----HOVERS-----------
+      &:hover {
+        .persons-list-photo-wrapper,
+        img{
+          width: 262px;
+          height: auto;
+          margin-top: 0;
+          @include transition(0.2s)
+        }
+        .persons-list-photo-wrapper div{
+          display: block;
+        }
+        h3,p {
+          filter: opacity(100%);
+          @include transition(0.2s)
+        }
+        .fa-facebook {
+          background-color: #205b9f;
+          @include transition(0.2s)
+        }
+        .fa-twitter {
+          background-color: #00ace3;
+          @include transition(0.2s)
+        }
+        .fa-google-plus {
+          background-color: #ff3921;
+          @include transition(0.2s)
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .persons-list > li {
+    width: 80%;
+    .persons-list-wrapper {
+      width: 260px;
+    }
+  }
+}
+
+
+
+
+

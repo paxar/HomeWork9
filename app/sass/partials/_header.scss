@@ -1,0 +1,24 @@
+.header{
+  font-family: $font-secondary;
+
+  .navbar{
+    h1{
+	 margin: 0;
+    }
+  }
+
+  .navbar-nav > li > a{
+    color: white;
+    text-transform: uppercase;
+
+    font-size: 14px;
+    font-weight: 700;
+
+  }
+
+
+
+
+}
+
+

@@ -1,10 +1,51 @@
-
 html, body{
   height: 100%;
 }
 
+body{
+  font-family: $font-primary;
+}
 
+.wrapper{
+  margin: 0 auto;
+  border: 1px dotted gray;
+}
+@media (min-width: 1170px) {
+  .wrapper{
+    max-width: 2000px;
+  }
+}
 
-header{
-  height: 100%;
+/*----------- replace bootstrap styles----------- */
+
+.navbar{
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus{
+  background-color: transparent;
+}
+
+.dropdown-menu{
+  background-color: transparent;
+  border-color: transparent;
+  border: none;
+  box-shadow: none;
+
+}
+
+.form-control:focus{
+  border-color: #17daa3;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form{
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle{
+  border-color: transparent;
 }

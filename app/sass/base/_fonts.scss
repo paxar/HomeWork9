@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?rrqu4o');
-  src:  url('../fonts/icomoon.eot?rrqu4o#iefix') format('embedded-opentype'),
-  url('../fonts/icomoon.ttf?rrqu4o') format('truetype'),
-  url('../fonts/icomoon.woff?rrqu4o') format('woff'),
-  url('./fonts/icomoon.svg?rrqu4o#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?wic4kz');
+  src:  url('../fonts/icomoon.eot?wic4kz#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?wic4kz') format('truetype'),
+  url('../fonts/icomoon.woff?wic4kz') format('woff'),
+  url('../fonts/icomoon.svg?wic4kz#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,31 +27,111 @@ i {
 .icon-arrow-back:before {
   content: "\e900";
 }
-.icon-arrow-next:before {
+.icon-arrow-down:before {
   content: "\e901";
 }
-.icon-atom:before {
+.icon-arrow-next:before {
   content: "\e902";
 }
-.icon-graduation-hat:before {
+.icon-atom:before {
   content: "\e903";
 }
-.icon-pencil:before {
+.icon-graduation-hat:before {
   content: "\e904";
 }
-.icon-portfolio:before {
+.icon-line:before {
   content: "\e905";
 }
-.icon-rocket:before {
+.icon-pencil:before {
   content: "\e906";
 }
-.icon-shopping-cart:before {
+.icon-portfolio:before {
   content: "\e907";
 }
-.icon-two-layers:before {
+.icon-rocket:before {
   content: "\e908";
 }
-.icon-zig-zag-graphic:before {
+.icon-search:before {
   content: "\e909";
+}
+.icon-shopping-cart:before {
+  content: "\e90a";
+}
+.icon-two-layers:before {
+  content: "\e90b";
+}
+.icon-zig-zag-graphic:before {
+  content: "\e90c";
+}
+
+
+
+
+/* Proxima Nova */
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Bold.woff') format('woff'),
+  url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+  url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNovaT-Thin.eot');
+  src: url('../fonts/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNovaT-Thin.woff') format('woff'),
+  url('../fonts/ProximaNovaT-Thin.ttf') format('truetype'),
+  url('../fonts/ProximaNovaT-Thin.svg#ProximaNovaT-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova-Black.eot');
+  src: url('../fonts/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Black.woff') format('woff'),
+  url('../fonts/ProximaNova-Black.ttf') format('truetype'),
+  url('../fonts/ProximaNova-Black.svg#ProximaNova-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova-Light.eot');
+  src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Light.woff') format('woff'),
+  url('../fonts/ProximaNova-Light.ttf') format('truetype'),
+  url('../fonts/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Regular.woff') format('woff'),
+  url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+  url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova-Semibold.eot');
+  src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+  url('../fonts/ProximaNova-Semibold.ttf') format('truetype'),
+  url('../fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
 }
 

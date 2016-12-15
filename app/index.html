@@ -4,8 +4,22 @@
         <meta charset="UTF-8">
         <title>Title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700" rel="stylesheet">
+        
         <link rel="stylesheet" href="css/libs.css">
         <link rel="stylesheet" href="css/style.css">
+
+       <!-- &lt;!&ndash; Latest compiled and minified CSS &ndash;&gt;
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+        &lt;!&ndash; Optional theme &ndash;&gt;
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        &lt;!&ndash; Latest compiled and minified JavaScript &ndash;&gt;
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
 
         <script src="js/libs.min.js"></script>
 
@@ -17,8 +31,10 @@
 
     </head>
     <body>
+<div class="section-bg">
+        <header class="header">
+            <div class="wrapper">
 
-        <header>
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -28,7 +44,8 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">LOGO</a>
+                        
+                        <h1><a class="navbar-brand" href="#"><img src="../img/logo.png" alt=""></a></h1>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
 
@@ -39,14 +56,27 @@
                             <li><a href="#">Work</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">Search icon</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search"></i> </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <form class="navbar-form">
+                                            <input type="text" class="form-control" placeholder="Search..." >
+                                        </form>
+
+                                    </li>
+
+                                </ul>
+                            </li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div><!--/.container-fluid -->
             </nav>
+            </div>
         </header>
 
         <section class="hero">
+            <div class="wrapper">
 
             <!-- Карусель -->
             <div id="myCarousel" class="carousel" data-ride="carousel" data-interval="false">
@@ -62,28 +92,24 @@
                 <!-- Слайды карусели -->
                 <div class="carousel-inner">
                     <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
-                    <div class="active item">
-                        <h2>Alecto is simple PSD Template</h2>
+                    <div class="item active">
+                        <h2><span>Alecto</span> is simple PSD Template</h2>
                         <p>Nam varius accumsan elementum aliquam</p>
-                        <a href="#">BUTTON</a>
+                        <a class="button-transparent" href="#">Learn more</a>
 
 
                     </div>
                     <!-- Слайд №2 -->
                     <div class="item">
-                        <h2>Slide 2</h2>
-                        <div class="carousel-caption">
-                            <h3>Second slide label</h3>
-                            <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-                        </div>
+                        <h2>Alecto is simple SPD Template</h2>
+                        <p>Nam varius accumsan elementum aliquam</p>
+                        <a href="#">BUTTON</a>
                     </div>
                     <!-- Слайд №3 -->
                     <div class="item">
-                        <h2>Slide 3</h2>
-                        <div class="carousel-caption">
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </div>
+                        <h2>Alecto is simple PDS Template</h2>
+                        <p>Nam varius accumsan elementum aliquam</p>
+                        <a href="#">BUTTON</a>
                     </div>
                 </div>
                 <!-- Навигация для карусели -->
@@ -100,11 +126,14 @@
             </div>
 
 
-
+            </div>
 
         </section>
 
+</div>
+
         <section class="about">
+            <div class="wrapper">
 
             <h2>About us</h2>
             <div class="caption-line"></div>
@@ -146,10 +175,11 @@
 
             <a href="#">Learn more</a>
 
-
+            </div>
         </section>
 
         <section class="info1">
+            <div class="wrapper">
             <h2>Lorem ipsum</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor,
@@ -157,9 +187,11 @@
                 id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien. 
             </p>
             <a href="#">Learn more</a>
+            </div>
         </section>
 
         <section class="info2">
+            <div class="wrapper">
             <h2>Dolor sit amet</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor,
@@ -167,13 +199,18 @@
                 id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.
             </p>
             <a href="#">Learn more</a>
+            </div>
         </section>
 
         <section class="reviews">
+            <div class="wrapper">
 
+
+            </div>
         </section>
 
         <section class="services">
+            <div class="wrapper">
 
 
             <h2>Our Services</h2>
@@ -221,9 +258,11 @@
                 </li>
             </ul>
 
+            </div>
         </section>
 
         <section class="persons">
+            <div class="wrapper">
 
             <h2>Meet our team</h2>
             <div class="caption-line"></div>
@@ -301,11 +340,11 @@
                 </li>
             </ul>
 
-
+            </div>
         </section>
 
         <section class="pricing">  <!-- todo rename class -->
-
+            <div class="wrapper">
             <h2>Pricing</h2>
             <div class="caption-line"></div>
             <p>Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</p>
@@ -361,11 +400,12 @@
             </ul>
 
 
-
+            </div>
         </section>
 
         <section class="info3">
-            <img src="img/map.png" alt="Map">
+            <div class="wrapper">
+            <!--<img src="img/map.png" alt="Map">-->
             <h2>Dolor sit amet</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor,
@@ -373,14 +413,18 @@
                 id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.
             </p>
             <a href="#">Learn more</a>
+            </div>
         </section>
 
         <section class="try">  <!--todo rename class-->
+            <div class="wrapper">
             <p>Try our <span>PSD template</span> on symu.co</p>
             <a href="#">symu.co/freebies</a>
+            </div>
         </section>
 
         <footer>
+            <div class="wrapper">
 
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
@@ -397,7 +441,7 @@
                 </div>
             </nav>
 
-
+            </div>
         </footer>
 
 

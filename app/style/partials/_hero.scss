@@ -1,0 +1,76 @@
+.section-bg {
+  background: url("../img/background-header.png") center /cover no-repeat;
+}
+
+.hero {
+  padding: 10% 0 5% 0;
+
+  h2 {
+    margin: 0 0 1%;
+    font: 700 50px $font-primary;
+    text-align: center;
+    color: $primary-light-color;
+    span {
+      color: $brand-color;
+    }
+  }
+
+  p {
+    margin: 0;
+    font: 400 20px/35px $font-primary;
+    color: $primary-light-color;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding: 10% 0 15% 0;
+    h2 {
+      font-size: 60px;
+    }
+    p {
+      width: 80%;
+      margin: 0 auto 1%;
+    }
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  .hero {
+    padding: 10% 0 5% 0;
+    h2 {
+      font-size: 70px;
+    }
+    p {
+      width: 70%;
+
+      font-size: 25px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .hero {
+    padding: 100px 0 45px 0;
+    h2 {
+      margin-bottom: 10px;
+    }
+    p {
+      width: 775px;
+      margin-bottom: 55px;
+    }
+  }
+}

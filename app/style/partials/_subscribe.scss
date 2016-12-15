@@ -1,0 +1,18 @@
+.subscribe {
+  background: url("../img/bacground-subscribe.png") center /cover no-repeat;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe {
+    padding: 5% 0;
+  }
+}
+
+@media only screen and (min-width: 970px) {
+}
+
+@media only screen and (min-width: 1170px) {
+  .subscribe {
+    padding: 80px 0;
+  }
+}
