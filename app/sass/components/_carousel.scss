@@ -1,4 +1,11 @@
 #myCarousel{
+  .carousel-control {
+    i {
+	 position: absolute;
+	 top: 25%;
+	 font-size: 25px;
+    }
+  }
 
   .carousel-inner{
     .item{
@@ -21,10 +28,12 @@
 	 }
 	 a{
 	   margin: 0 auto;
+	   margin-bottom: 100px;
 	   font-family: $font-primary;
 	   font-size: 14px;
 	   font-weight: 700;
 	   color: white;
+
 	 }
 	 @media (min-width: 768px){
 	   h2 {
@@ -44,5 +53,6 @@
 	 }
 
     }
+
+    }
   }
-}

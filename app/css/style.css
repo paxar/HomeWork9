@@ -108,6 +108,14 @@ i {
   border-radius: 23px;
   text-align: center;
   line-height: 47px; }
+  .button-transparent:hover {
+    background-color: #17daa3;
+    border: 2px solid #17daa3; }
+
+#myCarousel .carousel-control i {
+  position: absolute;
+  top: 25%;
+  font-size: 25px; }
 
 #myCarousel .carousel-inner .item h2 {
   font-family: "Raleway", sans-serif;
@@ -127,6 +135,7 @@ i {
 
 #myCarousel .carousel-inner .item a {
   margin: 0 auto;
+  margin-bottom: 100px;
   font-family: "Proxima Nova", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -195,7 +204,13 @@ body {
     font-weight: 700; }
 
 .section-bg {
+  position: relative;
   height: 100%;
   background: url("../img/bg-hero.png") center/cover no-repeat; }
+
+.hero {
+  position: absolute;
+  top: 33%;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
