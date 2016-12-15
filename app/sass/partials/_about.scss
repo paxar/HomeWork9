@@ -1,0 +1,64 @@
+.about {
+  .button-std{
+    display: block;
+    margin: 0 auto;
+
+  }
+}
+
+.about-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .about-list-item {
+    a{
+      display: block;
+      width: 292px;
+      margin: 0 auto;
+      text-decoration: none;
+      h3{
+        color: black;
+        font-family: Raleway;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+      }
+      p{
+        color: #87949e;
+        font-family: "Proxima Nova";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+      }
+      &:hover .about-list-icon-wrapper{
+        background-color: $brand-color;
+        i{
+          color: white;
+        }
+      }
+
+    }
+
+    .about-list-icon-wrapper {
+      display: block;
+      width: 182px;
+      height: 182px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-color: #edeff1;
+      line-height: 182px;
+      text-align: center;
+      i{
+
+        vertical-align: middle;
+        font-size: 60px;
+        color: #87949e;
+      }
+
+    }
+
+  }
+}
+

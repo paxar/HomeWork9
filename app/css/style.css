@@ -100,40 +100,55 @@ i {
   font-weight: 600;
   font-style: normal; }
 
-.button-transparent {
+.button-std {
   display: block;
   width: 183px;
   height: 47px;
   border: 2px solid white;
   border-radius: 23px;
   text-align: center;
-  line-height: 47px; }
-  .button-transparent:hover {
-    background-color: #17daa3;
-    border: 2px solid #17daa3; }
+  line-height: 47px;
+  text-decoration: none; }
 
-#myCarousel .carousel-control i {
+.btn-transparent:hover {
+  background-color: #17daa3;
+  border: 2px solid #17daa3; }
+
+.btn-green {
+  text-decoration: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #17daa3;
+  color: white; }
+
+#myCarousel .carousel-control.left,
+#myCarousel .carousel-control.right {
+  background-image: none; }
+
+#myCarousel i {
   position: absolute;
   top: 25%;
   font-size: 25px; }
 
-#myCarousel .carousel-inner .item h2 {
+.carousel-inner .item h2 {
   font-family: "Raleway", sans-serif;
   font-size: 30px;
   font-weight: 100;
   text-align: center;
   color: white; }
-  #myCarousel .carousel-inner .item h2 span {
+  .carousel-inner .item h2 span {
     font-weight: 700; }
 
-#myCarousel .carousel-inner .item p {
+.carousel-inner .item p {
   font-family: "Proxima Nova", sans-serif;
   font-size: 14px;
   font-weight: 300;
   text-align: center;
   color: white; }
 
-#myCarousel .carousel-inner .item a {
+.carousel-inner .item a {
   margin: 0 auto;
   margin-bottom: 100px;
   font-family: "Proxima Nova", sans-serif;
@@ -142,16 +157,42 @@ i {
   color: white; }
 
 @media (min-width: 768px) {
-  #myCarousel .carousel-inner .item h2 {
+  .carousel-inner .item h2 {
     font-size: 45px; }
-  #myCarousel .carousel-inner .item p {
+  .carousel-inner .item p {
     font-size: 18px; } }
 
 @media (min-width: 970px) {
-  #myCarousel .carousel-inner .item h2 {
+  .carousel-inner .item h2 {
     font-size: 60px; }
-  #myCarousel .carousel-inner .item p {
+  .carousel-inner .item p {
     font-size: 24px; } }
+
+.brand-caption {
+  margin: 0;
+  color: #576671;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .brand-caption {
+    font-size: 60px;
+    margin-bottom: 15px; } }
+
+.brand-paragraph {
+  margin: 0;
+  color: #87949e;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .brand-paragraph {
+    font-size: 18px;
+    margin-top: 25px; } }
 
 html, body {
   height: 100%; }
@@ -165,7 +206,22 @@ body {
 
 @media (min-width: 1170px) {
   .wrapper {
+    max-width: 1500px; } }
+
+.wrapper-lg {
+  margin: 0 auto;
+  border: 1px dotted gray; }
+
+@media (min-width: 1170px) {
+  .wrapper-lg {
     max-width: 2000px; } }
+
+.icon-line {
+  display: block;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+  color: #17daa3; }
 
 /*----------- replace bootstrap styles----------- */
 .navbar {
@@ -207,10 +263,104 @@ body {
   position: relative;
   height: 100%;
   background: url("../img/bg-hero.png") center/cover no-repeat; }
+  .section-bg .button-arrow-down {
+    display: block;
+    position: absolute;
+    top: 95%;
+    left: 50%; }
+    .section-bg .button-arrow-down .icon-arrow-down {
+      font-size: 30px;
+      color: white; }
 
 .hero {
   position: absolute;
   top: 33%;
   width: 100%; }
+
+.about .button-std {
+  display: block;
+  margin: 0 auto; }
+
+.about-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .about-list .about-list-item a {
+    display: block;
+    width: 292px;
+    margin: 0 auto;
+    text-decoration: none; }
+    .about-list .about-list-item a h3 {
+      color: black;
+      font-family: Raleway;
+      font-size: 30px;
+      font-weight: 400;
+      text-align: center; }
+    .about-list .about-list-item a p {
+      color: #87949e;
+      font-family: "Proxima Nova";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center; }
+    .about-list .about-list-item a:hover .about-list-icon-wrapper {
+      background-color: #17daa3; }
+      .about-list .about-list-item a:hover .about-list-icon-wrapper i {
+        color: white; }
+  .about-list .about-list-item .about-list-icon-wrapper {
+    display: block;
+    width: 182px;
+    height: 182px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #edeff1;
+    line-height: 182px;
+    text-align: center; }
+    .about-list .about-list-item .about-list-icon-wrapper i {
+      vertical-align: middle;
+      font-size: 60px;
+      color: #87949e; }
+
+.info1 p,
+.info2 p {
+  color: #87949e;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px; }
+
+.info1 .button-std,
+.info2 .button-std {
+  margin: 0 auto; }
+
+.info1 {
+  background-color: #f9f9fa; }
+
+@media (min-width: 758px) {
+  .info1 .brand-caption,
+  .info2 .brand-caption {
+    text-align: left; }
+  .info1 .button-std,
+  .info2 .button-std {
+    margin-left: 0; } }
+
+.services {
+  background-color: #f9f9fa; }
+
+.services-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .services-list .services-list-icon-wrapper {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 94px; }
+    .services-list .services-list-icon-wrapper i {
+      vertical-align: middle;
+      font-size: 50px;
+      color: #17daa3; }
 
 /*# sourceMappingURL=style.css.map */

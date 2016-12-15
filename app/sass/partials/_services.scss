@@ -1,0 +1,23 @@
+.services{
+  background-color: #f9f9fa;
+}
+
+.services-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .services-list-icon-wrapper{
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 94px;
+    i{
+      vertical-align: middle;
+      font-size: 50px;
+      color: $brand-color;
+    }
+  }
+}

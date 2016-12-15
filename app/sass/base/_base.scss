@@ -12,8 +12,26 @@ body{
 }
 @media (min-width: 1170px) {
   .wrapper{
+    max-width: 1500px;
+  }
+}
+.wrapper-lg{
+  margin: 0 auto;
+  border: 1px dotted gray;
+}
+@media (min-width: 1170px) {
+  .wrapper-lg{
     max-width: 2000px;
   }
+}
+
+
+.icon-line{
+  display: block;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+  color: $brand-color;
 }
 
 /*----------- replace bootstrap styles----------- */

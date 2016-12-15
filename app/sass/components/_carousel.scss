@@ -1,5 +1,12 @@
 #myCarousel{
-  .carousel-control {
+	.carousel-control{
+		//width: 3%;
+	}
+	.carousel-control.left,
+	.carousel-control.right{
+		background-image: none;
+	}
+
     i {
 	 position: absolute;
 	 top: 25%;
@@ -55,4 +62,4 @@
     }
 
     }
-  }
+
