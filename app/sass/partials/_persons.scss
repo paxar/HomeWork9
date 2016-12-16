@@ -1,3 +1,17 @@
+.persons{
+  .row{
+    margin: 0;
+  }
+  .gray{
+    background-color: #e4e4e4;
+  }
+  .gray-md{
+    background-color: #efefef;
+  }
+  .gray-lgh{
+    background-color: #f9f9fa;
+  }
+}
 .persons-list{
   list-style: none;
   padding: 0;
@@ -7,16 +21,57 @@
     margin: 0 auto;
     padding: 2%;
 
-    max-width: 700px;
+    max-width: 750px;
     //height: 400px;
-    background-color: lightgray; //TEST
+    //background-color: lightgray; //TEST
     img{
 
-	 max-width: 100%;
+	 max-width: 50%;
 	 margin: 0 auto;
 	 display: block;
 
     }
+    .hover{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background-color: rgba(23, 218, 163, 0.9);
+      opacity: 0;
+      @include transition(0.5s);
+      span{
+        display: block;
+        color: white;
+        font-family: $font-secondary;
+        font-size: 36px;
+        font-weight: 200;
+        text-align: center;
+        margin-top: 20%;
+      }
+    }
+    &:hover .hover{
+      opacity: 1;
+      height: 100%;
+
+      @include transition(0.5s)
+    }
   }
 
+}
+
+@media (min-width: 768px){
+  .persons-list{
+    .persons-list-item{
+      img{
+        max-width: 100%;
+      }
+    .hover{
+      span{
+        margin-top: 40%;
+      }
+    }
+    }
+
+  }
 }

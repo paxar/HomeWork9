@@ -395,7 +395,7 @@ body {
 .info1 {
   background-color: #f9f9fa; }
 
-@media (min-width: 758px) {
+@media (min-width: 768px) {
   .info1 .brand-caption,
   .info2 .brand-caption {
     text-align: left; }
@@ -466,6 +466,18 @@ body {
   padding: 10% 0;
   background: url("../img/bg-reviews.png") center/cover no-repeat; }
 
+.persons .row {
+  margin: 0; }
+
+.persons .gray {
+  background-color: #e4e4e4; }
+
+.persons .gray-md {
+  background-color: #efefef; }
+
+.persons .gray-lgh {
+  background-color: #f9f9fa; }
+
 .persons-list {
   list-style: none;
   padding: 0; }
@@ -473,12 +485,38 @@ body {
     display: block;
     margin: 0 auto;
     padding: 2%;
-    max-width: 700px;
-    background-color: lightgray; }
+    max-width: 750px; }
     .persons-list .persons-list-item img {
-      max-width: 100%;
+      max-width: 50%;
       margin: 0 auto;
       display: block; }
+    .persons-list .persons-list-item .hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background-color: rgba(23, 218, 163, 0.9);
+      opacity: 0;
+      transition-duration: 0.5s; }
+      .persons-list .persons-list-item .hover span {
+        display: block;
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 36px;
+        font-weight: 200;
+        text-align: center;
+        margin-top: 20%; }
+    .persons-list .persons-list-item:hover .hover {
+      opacity: 1;
+      height: 100%;
+      transition-duration: 0.5s; }
+
+@media (min-width: 768px) {
+  .persons-list .persons-list-item img {
+    max-width: 100%; }
+  .persons-list .persons-list-item .hover span {
+    margin-top: 40%; } }
 
 .footer {
   padding-bottom: 500px;
