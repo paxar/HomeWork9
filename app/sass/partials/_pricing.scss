@@ -1,0 +1,75 @@
+.pricing {
+  background-color: #f9f9fa;
+  .row {
+    margin: 0;
+  }
+}
+
+.pricing-list {
+  list-style: none;
+  padding: 0;
+  li {
+
+    .pricing-list-wrapper{
+      max-width: 345px;
+      margin: 2% auto;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0 35px rgba(227, 227, 227, 0.65);
+
+    }
+    .cost {
+      display: block;
+      padding-left: 10px;
+      padding-top: 30px;
+      color: $brand-color;
+      font-family: $font-secondary;
+      font-size: 60px;
+      font-weight: 200;
+    }
+    .product {
+      display: block;
+      padding-left: 10px;
+      padding-bottom: 40px;
+      opacity: 0.45;
+      color: #87949e;
+      //font-family: "Proxima Nova";
+      font-size: 18px;
+      font-weight: 400;
+      border-bottom: 2px solid #eeeff1;
+    }
+    p {
+      margin: 0;
+      padding: 40px 10px;
+      color: #87949e;
+      //font-family: "Proxima Nova";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 48px;
+    }
+    a {
+      display: block;
+      padding: 20px 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: $brand-color;
+      color: white;
+      //font-family: "Proxima Nova";
+      font-size: 18px;
+      font-weight: 700;
+
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+
+      &:hover {
+        letter-spacing: 3px;
+        .icon-shopping-cart {
+          margin-left: 52%;
+          @include transition(1s);
+        }
+
+      }
+
+    }
+  }
+}

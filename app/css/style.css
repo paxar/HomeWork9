@@ -462,6 +462,61 @@ body {
   .services-list .item-wrapper .services-list-text-wrapper {
     padding: 0 0 0 30px; } }
 
+.pricing {
+  background-color: #f9f9fa; }
+  .pricing .row {
+    margin: 0; }
+
+.pricing-list {
+  list-style: none;
+  padding: 0; }
+  .pricing-list li .pricing-list-wrapper {
+    max-width: 345px;
+    margin: 2% auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(227, 227, 227, 0.65); }
+  .pricing-list li .cost {
+    display: block;
+    padding-left: 10px;
+    padding-top: 30px;
+    color: #17daa3;
+    font-family: "Raleway", sans-serif;
+    font-size: 60px;
+    font-weight: 200; }
+  .pricing-list li .product {
+    display: block;
+    padding-left: 10px;
+    padding-bottom: 40px;
+    opacity: 0.45;
+    color: #87949e;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 2px solid #eeeff1; }
+  .pricing-list li p {
+    margin: 0;
+    padding: 40px 10px;
+    color: #87949e;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px; }
+  .pricing-list li a {
+    display: block;
+    padding: 20px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #17daa3;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+    .pricing-list li a:hover {
+      letter-spacing: 3px; }
+      .pricing-list li a:hover .icon-shopping-cart {
+        margin-left: 52%;
+        transition-duration: 1s; }
+
 .reviews {
   padding: 10% 0;
   background: url("../img/bg-reviews.png") center/cover no-repeat; }
