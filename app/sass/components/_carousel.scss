@@ -1,4 +1,5 @@
-#myCarousel{
+#hero-carousel,
+#reviews-carousel{
 	.carousel-control{
 		//width: 3%;
 	}
@@ -16,6 +17,9 @@
 
   .carousel-inner{
     .item{
+	 img{
+	   margin: 0 auto;
+	 }
 	 h2{
 	   font-family: $font-secondary;
 	   font-size: 30px;
@@ -26,12 +30,35 @@
 		font-weight: 700;
 	   }
 	 }
-	 p{
+	 h3{
+	   font-family: $font-secondary;
+	   font-size: 20px;
+	   font-weight: 300;
+	   text-align: center;
+	   color: white;
+	   span{
+		color: $brand-color;
+	   }
+	 }
+	 .hero-text{
 	   font-family: $font-primary;
 	   font-size: 14px;
 	   font-weight: 300;
 	   text-align: center;
 	   color: white;
+	 }
+	 .rev-text{
+	   margin-bottom: 50px;
+	   opacity: 0.3;
+	   color: white;
+	   font-family: $font-primary;
+	   font-size: 14px;
+	   font-weight: 300;
+	   text-align: center;
+	   span{
+		font-weight: 600;
+	   }
+
 	 }
 	 a{
 	   margin: 0 auto;
@@ -46,7 +73,13 @@
 	   h2 {
 		font-size: 45px;
 	   }
-	   p{
+	   h3{
+		font-size: 30px;
+	   }
+	   .hero-text{
+		font-size: 18px;
+	   }
+	   .rev-text{
 		font-size: 18px;
 	   }
 	 }
@@ -54,7 +87,7 @@
 	   h2 {
 		font-size: 60px;
 	   }
-	   p{
+	   .hero-text{
 		font-size: 24px;
 	   }
 	 }

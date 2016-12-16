@@ -1,13 +1,17 @@
 .about {
+  .row{
+    margin: 0;
+  }
   .button-std{
     display: block;
     margin: 0 auto;
+
 
   }
 }
 
 .about-list {
-  margin: 0;
+
   padding: 0;
   list-style: none;
 
