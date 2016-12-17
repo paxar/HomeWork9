@@ -157,6 +157,7 @@ i {
     color: #17daa3; }
 
 .carousel-inner .item .hero-text {
+  margin-top: 25px;
   font-family: "Proxima Nova", sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -164,7 +165,7 @@ i {
   color: white; }
 
 .carousel-inner .item .rev-text {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   opacity: 0.3;
   color: white;
   font-family: "Proxima Nova", sans-serif;
@@ -176,10 +177,12 @@ i {
 
 .carousel-inner .item a {
   margin: 0 auto;
+  margin-top: 55px;
   margin-bottom: 100px;
   font-family: "Proxima Nova", sans-serif;
   font-size: 14px;
   font-weight: 700;
+  text-decoration: none;
   color: white; }
 
 @media (min-width: 768px) {
@@ -307,9 +310,12 @@ body {
     float: left; } }
 
 .header {
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  padding: 1% 0; }
   .header .navbar h1 {
     margin: 0; }
+    .header .navbar h1 a {
+      padding-top: 5px; }
   .header .navbar-nav > li > a {
     color: white;
     text-transform: uppercase;
@@ -324,7 +330,8 @@ body {
     display: block;
     position: absolute;
     top: 95%;
-    left: 50%; }
+    left: 50%;
+    text-decoration: none; }
     .section-bg .button-arrow-down .icon-arrow-down {
       font-size: 30px;
       color: white; }
@@ -334,15 +341,18 @@ body {
   top: 33%;
   width: 100%; }
 
-.about .row {
-  margin: 0; }
-
-.about .button-std {
-  display: block;
-  margin: 0 auto; }
+.about {
+  padding: 4% 0; }
+  .about .row {
+    margin: 0; }
+  .about .button-std {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px; }
 
 .about-list {
   padding: 0;
+  margin-top: 10%;
   list-style: none; }
   .about-list .about-list-item a {
     display: block;
@@ -380,37 +390,51 @@ body {
       font-size: 60px;
       color: #87949e; }
 
-.info1 p,
-.info2 p {
-  color: #87949e;
-  font-family: "Proxima Nova", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 36px; }
-
-.info1 .button-std,
-.info2 .button-std {
-  margin: 0 auto; }
+.info1,
+.info2,
+.info3 {
+  padding: 5% 0; }
+  .info1 img,
+  .info2 img,
+  .info3 img {
+    display: block;
+    max-width: 100%; }
+  .info1 p,
+  .info2 p,
+  .info3 p {
+    color: #87949e;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px; }
+  .info1 .button-std,
+  .info2 .button-std,
+  .info3 .button-std {
+    margin: 8% auto; }
 
 .info1 {
   background-color: #f9f9fa; }
 
 @media (min-width: 768px) {
   .info1 .brand-caption,
-  .info2 .brand-caption {
+  .info2 .brand-caption,
+  .info3 .brand-caption {
+    margin: 8% 0;
     text-align: left; }
   .info1 .button-std,
-  .info2 .button-std {
+  .info2 .button-std,
+  .info3 .button-std {
     margin-left: 0; } }
 
 .services {
-  background-color: #f9f9fa; }
+  background-color: #f9f9fa;
+  padding: 5% 0; }
   .services .row {
     margin: 0; }
 
 .services-list {
   list-style: none;
-  margin: 0;
+  margin: 10% 0 0;
   padding: 0; }
   .services-list .item-wrapper {
     overflow: hidden; }
@@ -419,8 +443,7 @@ body {
       font-family: "Raleway", sans-serif;
       font-size: 40px;
       font-weight: 200;
-      text-align: center;
-      color: #576671; }
+      text-align: center; }
     .services-list .item-wrapper p {
       text-align: center;
       color: #87949e;
@@ -463,11 +486,13 @@ body {
     padding: 0 0 0 30px; } }
 
 .pricing {
-  background-color: #f9f9fa; }
+  background-color: #f9f9fa;
+  padding: 5% 0; }
   .pricing .row {
     margin: 0; }
 
 .pricing-list {
+  margin-top: 5%;
   list-style: none;
   padding: 0; }
   .pricing-list li .pricing-list-wrapper {
@@ -495,7 +520,7 @@ body {
     border-bottom: 2px solid #eeeff1; }
   .pricing-list li p {
     margin: 0;
-    padding: 40px 10px;
+    padding: 40px 40px 40px 10px;
     color: #87949e;
     font-size: 18px;
     font-weight: 400;
@@ -514,26 +539,52 @@ body {
     .pricing-list li a:hover {
       letter-spacing: 3px; }
       .pricing-list li a:hover .icon-shopping-cart {
-        margin-left: 52%;
+        margin-left: 45%;
         transition-duration: 1s; }
+
+.offer {
+  background: url("../img/bg-try.png") center/cover no-repeat;
+  padding: 10% 0; }
+  .offer p {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center; }
+    .offer p span {
+      font-weight: 700; }
+  .offer .button-std {
+    border: none;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white; }
+
+@media (min-width: 768px) {
+  .offer p {
+    font-size: 50px; } }
+
+@media (min-width: 970px) {
+  .offer p {
+    font-size: 60px; } }
 
 .reviews {
   padding: 10% 0;
   background: url("../img/bg-reviews.png") center/cover no-repeat; }
 
-.persons .row {
-  margin: 0; }
-
-.persons .gray {
-  background-color: #e4e4e4; }
-
-.persons .gray-md {
-  background-color: #efefef; }
-
-.persons .gray-lgh {
-  background-color: #f9f9fa; }
+.persons {
+  padding-top: 5%; }
+  .persons .row {
+    margin: 0; }
+  .persons .gray {
+    background-color: #e4e4e4; }
+  .persons .gray-md {
+    background-color: #efefef; }
+  .persons .gray-lgh {
+    background-color: #f9f9fa; }
 
 .persons-list {
+  margin-top: 5%;
   list-style: none;
   padding: 0; }
   .persons-list .persons-list-item {

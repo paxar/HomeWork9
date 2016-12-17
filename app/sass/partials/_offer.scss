@@ -1,0 +1,37 @@
+.offer{
+  background: url("../img/bg-try.png") center /cover no-repeat;
+  padding: 10% 0;
+
+  p{
+    color: white;
+    font-family: $font-secondary;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    span{
+      font-weight: 700;
+    }
+  }
+  .button-std{
+    border: none;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media (min-width: 768px){
+  .offer{
+    p{
+      font-size: 50px;
+    }
+  }
+}
+@media (min-width: 970px){
+  .offer{
+    p{
+      font-size: 60px;
+    }
+  }
+}

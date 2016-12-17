@@ -1,5 +1,6 @@
 .services{
   background-color: #f9f9fa;
+  padding: 5% 0;
   .row{
     margin: 0;
   }
@@ -7,7 +8,7 @@
 
 .services-list{
   list-style: none;
-  margin: 0;
+  margin: 10% 0 0;
   padding: 0;
   .item-wrapper{
     overflow: hidden;
@@ -18,7 +19,7 @@
     font-size: 40px;
     font-weight: 200;
     text-align: center;
-    color: #576671;
+    //color: #576671;
   }
   p{
     text-align: center;
