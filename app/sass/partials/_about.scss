@@ -7,13 +7,12 @@
     display: block;
     margin: 0 auto;
     margin-top: 100px;
-
-
+    text-decoration: none;
+    color: white;
   }
 }
 
 .about-list {
-
   padding: 0;
   margin-top: 10%;
   list-style: none;
@@ -26,14 +25,11 @@
       text-decoration: none;
       h3{
         color: black;
-        font-family: Raleway;
-        font-size: 30px;
-        font-weight: 400;
+        font: 400 30px $font-secondary;
         text-align: center;
       }
       p{
         color: #87949e;
-        font-family: "Proxima Nova";
         font-size: 18px;
         font-weight: 400;
         line-height: 30px;
@@ -41,11 +37,11 @@
       }
       &:hover .about-list-icon-wrapper{
         background-color: $brand-color;
+        @include transition(0.5s);
         i{
           color: white;
         }
       }
-
     }
 
     .about-list-icon-wrapper {
@@ -57,15 +53,13 @@
       background-color: #edeff1;
       line-height: 182px;
       text-align: center;
+      @include transition(0.5s);
       i{
-
         vertical-align: middle;
         font-size: 60px;
         color: #87949e;
       }
-
     }
-
   }
 }
 

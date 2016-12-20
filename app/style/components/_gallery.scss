@@ -35,7 +35,7 @@
         background-color: rgba(247, 96, 14, 0.8);
         opacity: 0; //hover hide
 
-        h3 {
+        h3 { // очень длинный селектор, старайся не больше 3 глубину делать
           margin-top: 25%;
           font: 600 25px $font-primary;
           color: $primary-light-color;

@@ -1,565 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
-
-        <link rel="stylesheet" href="css/libs.css">
-        <link rel="stylesheet" href="css/style.css">
-
-
-    </head>
-    <body>
-        <div class="section-bg">
-            <header class="header">
-                <div class="wrapper">
-
-                    <nav class="navbar navbar-default">
-                        <div class="container-fluid">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-
-                                <h1><a class="navbar-brand" href="#"><img src="../img/logo.png" alt=""></a></h1>
-                            </div>
-                            <div id="navbar" class="navbar-collapse collapse">
-
-                                <ul class="nav navbar-nav navbar-right">
-
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Work</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-                                                class="icon-search"></i> </a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li>
-                                                <form class="navbar-form">
-                                                    <input type="text" class="form-control" placeholder="Search...">
-                                                </form>
-
-                                            </li>
-
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div><!--/.nav-collapse -->
-                        </div><!--/.container-fluid -->
-                    </nav>
-                </div>
-            </header>
-
-            <section class="hero">
-                <div class="wrapper">
-
-                    <!-- Карусель -->
-                    <div id="hero-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-                        <!-- Индикаторы для карусели -->
-                        <ol class="carousel-indicators">
-                            <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
-                            <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
-                            <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
-                            <li data-target="#hero-carousel" data-slide-to="1"></li>
-                            <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
-                            <li data-target="#hero-carousel" data-slide-to="2"></li>
-                        </ol>
-                        <!-- Слайды карусели -->
-                        <div class="carousel-inner">
-                            <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
-                            <div class="item active">
-                                <h2><span>Alecto</span> is simple SPD Template</h2>
-                                <p class="hero-text">Nam varius accumsan elementum aliquam</p>
-                                <a class="button-std btn-transparent" href="#">Learn more</a>
+<!-- гляну позже-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
 
-                            </div>
-                            <!-- Слайд №2 -->
-                            <div class="item">
-                                <h2><span>Alecto</span> is simple PSD Template</h2>
-                                <p class="hero-text">Nam varius accumsan elementum aliquam</p>
-                                <a class="button-std btn-transparent" href="#">Learn more</a>
-                            </div>
-                            <!-- Слайд №3 -->
-                            <div class="item">
-                                <h2><span>Alecto</span> is simple PDS Template</h2>
-                                <p class="hero-text">Nam varius accumsan elementum aliquam</p>
-                                <a class="button-std btn-transparent" href="#">Learn more</a>
-                            </div>
-                        </div>
-                        <!-- Навигация для карусели -->
-                        <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
-                        <a class="carousel-control left" href="#hero-carousel" data-slide="prev">
-                            <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
-                            <i class="icon-arrow-back"></i>
-                        </a>
-                        <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
-                        <a class="carousel-control right" href="#hero-carousel" data-slide="next">
-                            <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
-                            <i class="icon-arrow-next"></i>
-                        </a>
+</head>
+<body>
+
+<div class="section-bg">
+    <!--ну я думаю хедер делать статическим тут не лучшая идея, темболее у тебя какой-то странный отступ внизу на нем, но как вариант пойдет -->
+    <header class="header">
+        <div class="wrapper">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid"> <!-- я говорил, что идея делать сайт на всю ширину не самая хорошая, но получилось неплохо. Тут желательно .container-->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <h1><a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a></h1>
                     </div>
 
+                    <div id="navbar" class="navbar-collapse collapse">
 
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#info">Work</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                        class="icon-search"></i> </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <form class="navbar-form">
+                                            <input type="text" class="form-control" placeholder="Search...">
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero"><!-- 33% для центрирования это уже костыль) -->
+        <div class="wrapper">
+
+            <div id="hero-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#hero-carousel" data-slide-to="1"></li>
+                    <li data-target="#hero-carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <h2><span>Alecto</span> is simple SPD Template</h2>
+                        <p class="hero-text">Nam varius accumsan elementum aliquam</p>
+                        <a class="button-std btn-transparent" href="#">Learn more</a>
+                    </div>
+                    <div class="item">
+                        <h2><span>Alecto</span> is simple PSD Template</h2>
+                        <p class="hero-text">Nam varius accumsan elementum aliquam</p>
+                        <a class="button-std btn-transparent" href="#">Learn more</a>
+                    </div>
+                    <div class="item">
+                        <h2><span>Alecto</span> is simple PDS Template</h2>
+                        <p class="hero-text">Nam varius accumsan elementum aliquam</p>
+                        <a class="button-std btn-transparent" href="#">Learn more</a>
+                    </div>
                 </div>
 
-            </section>
-            <div id="scroll">
-                <a class="button-arrow-down" href="#about"><i class="icon-arrow-down"></i></a>
+                <!--у тебя стрелочки кликаются по всей высоте карусели, так быть не должно -->
+                <a class="carousel-control left" href="#hero-carousel" data-slide="prev">
+                    <i class="icon-arrow-back"></i>
+                </a>
+                <a class="carousel-control right" href="#hero-carousel" data-slide="next">
+                    <i class="icon-arrow-next"></i>
+                </a>
             </div>
         </div>
 
-        <section class="about" id="about">
-            <div class="wrapper">
+    </section>
 
-                <h2 class="brand-caption">About us</h2>
-                <i class="icon-line"></i>
-                <p class="brand-paragraph">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit
-                    scelerisque.</p>
-                <div class="row">
-                    <ul class="about-list">
-                        <li class="about-list-item col-xs-12 col-sm-6 col-lg-3">
-                            <a href="#">
-                                <div class="about-list-icon-wrapper">
-                                    <i class="icon-rocket"></i>
-                                </div>
-                                <h3>Lorem ipsum</h3>
-                                <p>Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</p>
-                            </a>
-                        </li>
+    <div id="scroll">
+        <a class="button-arrow-down" href="#about"><i class="icon-arrow-down"></i></a>
+    </div>
 
-                        <li class="about-list-item col-xs-12 col-sm-6 col-lg-3">
-                            <a href="#">
-                                <div class="about-list-icon-wrapper">
-                                    <i class="icon-atom"></i>
-                                </div>
-                                <h3>Lorem ipsum</h3>
-                                <p>Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</p>
-                            </a>
-                        </li>
+</div>
 
-                        <li class="about-list-item col-xs-12 col-sm-6 col-lg-3">
-                            <a href="#">
-                                <div class="about-list-icon-wrapper">
-                                    <i class="icon-zig-zag-graphic"></i>
-                                </div>
-                                <h3>Lorem ipsum</h3>
-                                <p>Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</p>
-                            </a>
-                        </li>
+<section class="about" id="about">
+    <div class="wrapper">
 
-                        <li class="about-list-item col-xs-12 col-sm-6 col-lg-3">
-                            <a href="#">
-                                <div class="about-list-icon-wrapper">
-                                    <i class="icon-graduation-hat"></i>
-                                </div>
-                                <h3>Lorem ipsum</h3>
-                                <p>Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</p>
-                            </a>
-                        </li>
+        <h2 class="brand-caption">About us</h2>
+        <i class="icon-line"></i><!-- псевдоэлементами это лучше делать -->
+        <p class="brand-paragraph">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit
+            scelerisque.</p><!-- лучше саб-тайтл или какой-то дескрипшин в названиии класа написать -->
 
-                    </ul>
-                </div>
-
-                <a class="button-std btn-green" href="#">Learn more</a>
-
-            </div>
-        </section>
-
-        <section class="info1">
-            <div class="wrapper row">
-                <div class="text-wrapper col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-6 col-md-6">
-                    <h2 class="brand-caption">Lorem ipsum</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est
-                        porttitor,
-                        ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur
-                        enim
-                        id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.
-                    </p>
-                    <a class="button-std btn-green" href="#">Learn more</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="info2">
-            <div class="wrapper row">
-                <div class="text-wrapper col-xs-12  col-sm-8  col-md-6">
-                    <h2 class="brand-caption">Dolor sit amet</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est
-                        porttitor,
-                        ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur
-                        enim
-                        id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.
-                    </p>
-                    <a class="button-std btn-green" href="#">Learn more</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="reviews">
-            <div class="wrapper">
-
-                <div id="reviews-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-                    <ol class="carousel-indicators">
-                        <li data-target="#reviews-carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#reviews-carousel" data-slide-to="1"></li>
-                        <li data-target="#reviews-carousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img class="reviews-carousel-photo" src="img/photo-reviews.png" alt="photo">
-                            <h3><span>Alecto</span> lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
-                            <p class="rev-text"><span>Adam Czajkowski,</span> CEO&Founder at symu.co</p>
-
+        <div class="row">
+            <ul class="about-list"><!-- ты можешь заметить, что у тебя блок не имеет высоты как таковой, вот тут лучше было бы поставить .row, так как на нем висит clear-->
+                <li class="about-list-item col-xs-12 col-sm-6 col-lg-3">
+                    <a href="#">
+                        <div class="about-list-icon-wrapper">
+                            <i class="icon-rocket"></i>
                         </div>
-                        <div class="item">
-                            <h2><span>Alecto</span> is simple PSD Template</h2>
-                            <p>Nam varius accumsan elementum aliquam</p>
-                            <a class="button-std btn-transparent" href="#">Learn more</a>
+                        <h3>Lorem ipsum</h3>
+                        <p>Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</p>
+                    </a>
+                </li>
+
+                <li class="about-list-item col-xs-12 col-sm-6 col-lg-3">
+                    <a href="#">
+                        <div class="about-list-icon-wrapper">
+                            <i class="icon-atom"></i>
                         </div>
-                        <div class="item">
-                            <h2><span>Alecto</span> is simple PDS Template</h2>
-                            <p>Nam varius accumsan elementum aliquam</p>
-                            <a class="button-std btn-transparent" href="#">Learn more</a>
+                        <h3>Lorem ipsum</h3>
+                        <p>Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</p>
+                    </a>
+                </li>
+
+                <li class="about-list-item col-xs-12 col-sm-6 col-lg-3">
+                    <a href="#">
+                        <div class="about-list-icon-wrapper">
+                            <i class="icon-zig-zag-graphic"></i>
+                        </div>
+                        <h3>Lorem ipsum</h3>
+                        <p>Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</p>
+                    </a>
+                </li>
+
+                <li class="about-list-item col-xs-12 col-sm-6 col-lg-3">
+                    <a href="#">
+                        <div class="about-list-icon-wrapper">
+                            <i class="icon-graduation-hat"></i>
+                        </div>
+                        <h3>Lorem ipsum</h3>
+                        <p>Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <a class="button-std btn-green" href="#">Learn more</a>
+
+    </div>
+</section>
+
+<section class="info1" id="info">
+    <div class="wrapper row">
+
+        <div class="text-wrapper col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-6 col-md-6">
+            <h2 class="brand-caption">Lorem ipsum</h2> <!-- вот эти блоки у тебя не универстальные по стилям, нужно не привязываться к блоку -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est
+                porttitor,
+                ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur
+                enim
+                id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.
+            </p>
+            <a class="button-std btn-green" href="#">Learn more</a>
+        </div>
+    </div>
+</section>
+
+<section class="info2">
+    <div class="wrapper row">
+
+        <div class="text-wrapper col-xs-12  col-sm-8  col-md-6">
+            <h2 class="brand-caption">Dolor sit amet</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est
+                porttitor,
+                ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur
+                enim
+                id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.
+            </p>
+            <a class="button-std btn-green" href="#">Learn more</a>
+        </div>
+    </div>
+</section>
+
+<section class="reviews"><!-- этот блок называется .testimonials -->
+    <div class="wrapper"><!-- ну ты понял по поводу враппера -->
+
+        <div id="reviews-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+                <li data-target="#reviews-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#reviews-carousel" data-slide-to="1"></li>
+                <li data-target="#reviews-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="reviews-carousel-photo" src="img/photo-reviews.png" alt="photo">
+                    <h3><span>Alecto</span> lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+                    <p class="rev-text"><span>Adam Czajkowski,</span> CEO&Founder at symu.co</p>
+                </div>
+                <div class="item">
+                    <img class="reviews-carousel-photo" src="img/photo-reviews.png" alt="photo">
+                    <h3><span>Alecto</span> lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+                    <p class="rev-text"><span>Adam Czajkowski,</span> CEO&Founder at symu.co</p>
+                </div>
+                <div class="item">
+                    <img class="reviews-carousel-photo" src="img/photo-reviews.png" alt="photo">
+                    <h3><span>Alecto</span> lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+                    <p class="rev-text"><span>Adam Czajkowski,</span> CEO&Founder at symu.co</p>
+                </div>
+            </div>
+            <a class="carousel-control left" href="#reviews-carousel" data-slide="prev">
+                <i class="icon-arrow-back"></i>
+            </a>
+            <a class="carousel-control right" href="#reviews-carousel" data-slide="next">
+                <i class="icon-arrow-next"></i>
+            </a>
+        </div>
+
+
+    </div>
+</section>
+
+<section class="services" id="services">
+    <div class="wrapper">
+        <h2 class="brand-caption">Our Services</h2>
+        <i class="icon-line"></i>
+        <p class="brand-paragraph">
+            Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
+        </p>
+
+        <div class="row">
+            <ul class="services-list">
+                <li class="col-xs-12 col-sm-6">
+                    <div class="item-wrapper row"><!-- не вижу смысла в классе .item-wrapper -->
+                        <div class="services-list-icon-wrapper  col-sm-4 col-md-push-2 ">
+                            <i class="icon-portfolio"></i>
+                        </div>
+                        <div class="services-list-text-wrapper col-sm-8 col-md-push-2 col-md-8">
+                            <h3>Portfolio</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue
+                                sed est porttitor, ac blandit nisl posuere.
+                            </p>
                         </div>
                     </div>
-                    <a class="carousel-control left" href="#reviews-carousel" data-slide="prev">
-                        <i class="icon-arrow-back"></i>
-                    </a>
-                    <a class="carousel-control right" href="#reviews-carousel" data-slide="next">
-                        <i class="icon-arrow-next"></i>
-                    </a>
-                </div>
+                </li>
 
-
-            </div>
-        </section>
-
-        <section class="services">
-            <div class="wrapper">
-                <h2 class="brand-caption">Our Services</h2>
-                <i class="icon-line"></i>
-                <p class="brand-paragraph">
-                    Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
-                </p>
-                <div class="row">
-                    <ul class="services-list">
-                        <li class="col-xs-12 col-sm-6">
-                            <div class="item-wrapper row">
-                                <div class="services-list-icon-wrapper  col-sm-4 col-md-push-2 ">
-                                    <i class="icon-portfolio"></i>
-                                </div>
-                                <div class="services-list-text-wrapper col-sm-8 col-md-push-2 col-md-8">
-                                    <h3>Portfolio</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue
-                                        sed est porttitor, ac blandit nisl posuere.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="col-xs-12 col-sm-6">
-                            <div class="item-wrapper row">
-                                <div class="services-list-icon-wrapper  col-sm-4 col-md-push-2 ">
-                                    <i class="icon-pencil"></i>
-                                </div>
-                                <div class="services-list-text-wrapper col-sm-8 col-md-push-2 col-md-8">
-
-                                    <h3>Design</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue
-                                        sed est porttitor, ac blandit nisl posuere.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-
-
-                        <li class="col-xs-12 col-sm-6">
-                            <div class="item-wrapper">
-                                <div class="services-list-icon-wrapper  col-sm-4 col-md-push-2 ">
-                                    <i class="icon-two-layers"></i>
-                                </div>
-                                <div class="services-list-text-wrapper col-sm-8 col-md-push-2 col-md-8">
-
-                                    <h3>Branding</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue
-                                        sed est porttitor, ac blandit nisl posuere.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-
-
-                        <li class="col-xs-12 col-sm-6">
-                            <div class="item-wrapper">
-                                <div class="services-list-icon-wrapper  col-sm-4 col-md-push-2 ">
-                                    <i class="icon-rocket"></i>
-                                </div>
-                                <div class="services-list-text-wrapper col-sm-8 col-md-push-2 col-md-8">
-
-                                    <h3>Development</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue
-                                        sed est porttitor, ac blandit nisl posuere.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="persons">
-            <div class="wrapper-lg">
-
-                <h2 class="brand-caption">Meet our team</h2>
-                <i class="icon-line"></i>
-                <p class="brand-paragraph">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit
-                    scelerisque.</p>
-
-                <div class="row ">
-                    <ul class="persons-list">
-
-                        <li class="persons-list-item gray col-sm-6 col-md-1-5">
-                            <img src="img/1.png" alt="Photo Person">
-                            <div class="hover">
-                                <span>John Doe</span>
-                            </div>
-                        </li>
-
-                        <li class="persons-list-item gray-lgh col-sm-6 col-md-1-5">
-                            <img src="img/2.png" alt="Photo Person">
-                            <div class="hover">
-                                <span>John Doe</span>
-                            </div>
-                        </li>
-
-                        <li class="persons-list-item gray col-sm-6 col-md-1-5">
-                            <img src="img/3.png" alt="Photo Person">
-                            <div class="hover">
-                                <span>John Doe</span>
-                            </div>
-                        </li>
-
-                        <li class="persons-list-item gray-lgh col-sm-6 col-md-1-5">
-                            <img src="img/4.png" alt="Photo Person">
-                            <div class="hover">
-                                <span>John Doe</span>
-                            </div>
-                        </li>
-
-                        <li class="persons-list-item gray col-sm-6 col-md-1-5">
-                            <img src="img/5.png" alt="Photo Person">
-                            <div class="hover">
-                                <span>John Doe</span>
-                            </div>
-                        </li>
-
-                        <li class="persons-list-item gray-md col-sm-6 col-md-1-5">
-                            <img src="img/6.png" alt="Photo Person">
-                            <div class="hover">
-                                <span>John Doe</span>
-                            </div>
-                        </li>
-
-                        <li class="persons-list-item gray col-sm-6 col-md-1-5">
-                            <img src="img/7.png" alt="Photo Person">
-                            <div class="hover">
-                                <span>John Doe</span>
-                            </div>
-                        </li>
-
-                        <li class="persons-list-item gray-md col-sm-6 col-md-1-5">
-                            <img src="img/8.png" alt="Photo Person">
-                            <div class="hover">
-                                <span>John Doe</span>
-                            </div>
-                        </li>
-
-                        <li class="persons-list-item gray col-sm-6 col-md-1-5">
-                            <img src="img/9.png" alt="Photo Person">
-                            <div class="hover">
-                                <span>John Doe</span>
-                            </div>
-                        </li>
-
-                        <li class="persons-list-item gray-md col-sm-6 col-md-1-5">
-                            <img src="img/10.png" alt="Photo Person">
-                            <div class="hover">
-                                <span>John Doe</span>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="pricing">  <!-- todo rename class -->
-            <div class="wrapper">
-                <h2 class="brand-caption">Pricing</h2>
-                <i class="icon-line"></i>
-                <p class="brand-paragraph">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit
-                    scelerisque.</p>
-                <div class="row">
-                    <ul class="pricing-list">
-                        <li class=" col-md-offset-1 col-md-5 col-lg-offset-0 col-lg-3">
-                            <div class="pricing-list-wrapper">
-                                <span class="cost">$29</span>
-                                <span class="product">Lorem ipsum license</span>
-
-                                <p>Lorem ipsum dolor sit amet
-                                    consectetur adipiscing elit
-                                    Ante sed interdum labortis
-                                    Est nisi efficitur lactus
-                                </p>
-                                <a href="#">Purchase <i class="icon-shopping-cart"></i></a>
-                            </div>
-                        </li>
-
-                        <li class=" col-md-offset-1 col-md-5 col-lg-offset-0 col-lg-3">
-                            <div class="pricing-list-wrapper">
-                                <span class="cost">$39</span>
-                                <span class="product">Lorem ipsum license</span>
-
-                                <p>Lorem ipsum dolor sit amet
-                                    consectetur adipiscing elit
-                                    Ante sed interdum labortis
-                                    Est nisi efficitur lactus
-                                </p>
-                                <a href="#">Purchase <i class="icon-shopping-cart"></i></a>
-                            </div>
-                        </li>
-
-                        <li class=" col-md-offset-1 col-md-5 col-lg-offset-0 col-lg-3">
-                            <div class="pricing-list-wrapper">
-                                <span class="cost">$49</span>
-                                <span class="product">Lorem ipsum license</span>
-
-                                <p>Lorem ipsum dolor sit amet
-                                    consectetur adipiscing elit
-                                    Ante sed interdum labortis
-                                    Est nisi efficitur lactus
-                                </p>
-                                <a href="#">Purchase <i class="icon-shopping-cart"></i></a>
-                            </div>
-                        </li>
-
-                        <li class=" col-md-offset-1 col-md-5 col-lg-offset-0 col-lg-3">
-                            <div class="pricing-list-wrapper">
-                                <span class="cost">$109</span>
-                                <span class="product">Lorem ipsum license</span>
-
-                                <p>Lorem ipsum dolor sit amet
-                                    consectetur adipiscing elit
-                                    Ante sed interdum labortis
-                                    Est nisi efficitur lactus
-                                </p>
-                                <a href="#">Purchase <i class="icon-shopping-cart"></i></a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-
-            </div>
-        </section>
-
-        <section class="info3">
-            <div class="wrapper-lg row">
-
-                <div class="text-wrapper col-xs-12 col-md-6 col-lg-offset-1 col-lg-5">
-                    <h2 class="brand-caption">Dolor sit amet</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est
-                        porttitor,
-                        ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur
-                        enim
-                        id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.
-                    </p>
-                    <a class="button-std btn-green" href="#">Learn more</a>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <img src="img/map.png" alt="Map">
-                </div>
-            </div>
-        </section>
-
-        <section class="offer">
-            <div class="wrapper">
-                <p>Try our <span>PSD template</span> on symu.co</p>
-                <a class="button-std btn-green" href="#">symu.co/freebies</a>
-            </div>
-        </section>
-
-
-        <footer class="footer">
-            <div class="wrapper">
-
-                <a class="footer-logo" href="#"><img src="img/footer-logo.png" alt="Footer Logo">All Rights Reserved by
-                    Alecto</a>
-
-                <ul class="footer-nav">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Work</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                </ul>
-
-                <!--<nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="#">WebSiteName</a>
+                <li class="col-xs-12 col-sm-6">
+                    <div class="item-wrapper row">
+                        <div class="services-list-icon-wrapper  col-sm-4 col-md-push-2 ">
+                            <i class="icon-pencil"></i>
                         </div>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Work</a></li>
-                            <li><a href="#">Services</a></li>
+                        <div class="services-list-text-wrapper col-sm-8 col-md-push-2 col-md-8">
 
-                        </ul>
+                            <h3>Design</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue
+                                sed est porttitor, ac blandit nisl posuere.
+                            </p>
+                        </div>
                     </div>
-                </nav>-->
+                </li>
 
-            </div>
-        </footer>
-        <!--Scripts-->
-        <script src="js/libs.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $("#scroll").on("click", "a", function (event) {
-                    event.preventDefault();
-                    var id = $(this).attr('href'),
-                        top = $(id).offset().top;
-                    $('body,html').animate({scrollTop: top}, 700);
-                });
-            });
-        </script>
+                <li class="col-xs-12 col-sm-6">
+                    <div class="item-wrapper">
+                        <div class="services-list-icon-wrapper  col-sm-4 col-md-push-2 ">
+                            <i class="icon-two-layers"></i>
+                        </div>
+                        <div class="services-list-text-wrapper col-sm-8 col-md-push-2 col-md-8">
 
-    </body>
+                            <h3>Branding</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue
+                                sed est porttitor, ac blandit nisl posuere.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="col-xs-12 col-sm-6">
+                    <div class="item-wrapper">
+                        <div class="services-list-icon-wrapper  col-sm-4 col-md-push-2 ">
+                            <i class="icon-rocket"></i>
+                        </div>
+                        <div class="services-list-text-wrapper col-sm-8 col-md-push-2 col-md-8">
+
+                            <h3>Development</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue
+                                sed est porttitor, ac blandit nisl posuere.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="persons">
+    <div class="wrapper-lg">
+
+        <h2 class="brand-caption">Meet our team</h2>
+        <i class="icon-line"></i>
+        <p class="brand-paragraph">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit
+            scelerisque.</p>
+
+        <div class="row ">
+            <ul class="persons-list">
+                <!--мне вообще эта секция не понравилась, как-то не так оно) -->
+                <li class="persons-list-item gray col-sm-6 col-md-1-5">
+                    <img src="img/1.png" alt="Photo Person">
+                    <div class="hover">
+                        <span>John Doe</span>
+                    </div>
+                </li>
+
+                <li class="persons-list-item gray-lgh col-sm-6 col-md-1-5">
+                    <img src="img/2.png" alt="Photo Person">
+                    <div class="hover">
+                        <span>John Doe</span>
+                    </div>
+                </li>
+
+                <li class="persons-list-item gray col-sm-6 col-md-1-5">
+                    <img src="img/3.png" alt="Photo Person">
+                    <div class="hover">
+                        <span>John Doe</span>
+                    </div>
+                </li>
+
+                <li class="persons-list-item gray-lgh col-sm-6 col-md-1-5">
+                    <img src="img/4.png" alt="Photo Person">
+                    <div class="hover">
+                        <span>John Doe</span>
+                    </div>
+                </li>
+
+                <li class="persons-list-item gray col-sm-6 col-md-1-5">
+                    <img src="img/5.png" alt="Photo Person">
+                    <div class="hover">
+                        <span>John Doe</span>
+                    </div>
+                </li>
+
+                <li class="persons-list-item gray-md col-sm-6 col-md-1-5">
+                    <img src="img/6.png" alt="Photo Person">
+                    <div class="hover">
+                        <span>John Doe</span>
+                    </div>
+                </li>
+
+                <li class="persons-list-item gray col-sm-6 col-md-1-5">
+                    <img src="img/7.png" alt="Photo Person">
+                    <div class="hover">
+                        <span>John Doe</span>
+                    </div>
+                </li>
+
+                <li class="persons-list-item gray-md col-sm-6 col-md-1-5">
+                    <img src="img/8.png" alt="Photo Person">
+                    <div class="hover">
+                        <span>John Doe</span>
+                    </div>
+                </li>
+
+                <li class="persons-list-item gray col-sm-6 col-md-1-5">
+                    <img src="img/9.png" alt="Photo Person">
+                    <div class="hover">
+                        <span>John Doe</span>
+                    </div>
+                </li>
+
+                <li class="persons-list-item gray-md col-sm-6 col-md-1-5">
+                    <img src="img/10.png" alt="Photo Person">
+                    <div class="hover">
+                        <span>John Doe</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="pricing">
+    <div class="wrapper">
+        <h2 class="brand-caption">Pricing</h2>
+        <i class="icon-line"></i>
+        <p class="brand-paragraph">Nam varius accumsan elementum. Aliquam fermentum eros in suscipit
+            scelerisque.</p>
+
+        <div class="row">
+            <ul class="pricing-list">
+                <li class=" col-md-offset-1 col-md-5 col-lg-offset-0 col-lg-3">
+                    <div class="pricing-list-wrapper">
+                        <span class="cost">$29</span>
+                        <span class="product">Lorem ipsum license</span>
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur adipiscing elit
+                            Ante sed interdum labortis
+                            Est nisi efficitur lactus
+                        </p>
+                        <a href="#">Purchase <i class="icon-shopping-cart"></i></a>
+                    </div>
+                </li>
+
+                <li class=" col-md-offset-1 col-md-5 col-lg-offset-0 col-lg-3"><!-- ты мог бы просто сделать большную ширину блока и центрировать внутренний блок, а не добавлять offset-->
+                    <div class="pricing-list-wrapper">
+                        <span class="cost">$39</span>
+                        <span class="product">Lorem ipsum license</span>
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur adipiscing elit
+                            Ante sed interdum labortis
+                            Est nisi efficitur lactus
+                        </p>
+                        <a href="#">Purchase <i class="icon-shopping-cart"></i></a>
+                    </div>
+                </li>
+
+                <li class=" col-md-offset-1 col-md-5 col-lg-offset-0 col-lg-3">
+                    <div class="pricing-list-wrapper">
+                        <span class="cost">$49</span>
+                        <span class="product">Lorem ipsum license</span>
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur adipiscing elit
+                            Ante sed interdum labortis
+                            Est nisi efficitur lactus
+                        </p>
+                        <a href="#">Purchase <i class="icon-shopping-cart"></i></a>
+                    </div>
+                </li>
+
+                <li class=" col-md-offset-1 col-md-5 col-lg-offset-0 col-lg-3">
+                    <div class="pricing-list-wrapper">
+                        <span class="cost">$109</span>
+                        <span class="product">Lorem ipsum license</span>
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur adipiscing elit
+                            Ante sed interdum labortis
+                            Est nisi efficitur lactus
+                        </p>
+                        <a href="#">Purchase <i class="icon-shopping-cart"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="info3">
+    <div class="wrapper-lg row">
+
+        <div class="text-wrapper col-xs-12 col-md-6 col-lg-offset-1 col-lg-5"><!-- ну был бы у тебя враппер тут, то не нужно было бы отступ делать -->
+            <h2 class="brand-caption">Dolor sit amet</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est
+                porttitor,
+                ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur
+                enim
+                id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.
+            </p>
+            <a class="button-std btn-green" href="#">Learn more</a>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <img src="img/map.png" alt="Map">
+        </div>
+    </div>
+</section>
+
+<section class="offer">
+    <div class="wrapper">
+
+        <p>Try our <span>PSD template</span> on symu.co</p>
+        <a class="button-std btn-green" href="#">symu.co/freebies</a>
+
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="wrapper">
+
+        <a class="footer-logo" href="#"><img src="img/footer-logo.png" alt="Footer Logo">All Rights Reserved by
+            Alecto</a>
+
+        <ul class="footer-nav">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#info">Work</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+        </ul>
+
+    </div>
+</footer>
+<!--Scripts-->
+<script src="js/libs.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#scroll").on("click", "a", function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 700);
+        });
+    });
+</script>
+
+</body>
 </html>
+
+<!-- в целом очень даже хорошо, но поработай над ошибками, а то они критичные -->

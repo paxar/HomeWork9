@@ -24,7 +24,7 @@
         @include transition(0.4s)
       }
 
-      .fa-facebook {
+      .fa-facebook { // лучше не стилить иконки, а вдруг я захочу другие иконки, не font-awesome? используй эти классы только для иконок и все
         background-color: #205b9f;
       }
 

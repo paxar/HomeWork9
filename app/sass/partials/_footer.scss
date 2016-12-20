@@ -1,9 +1,9 @@
 .footer{
-  padding-bottom: 500px;
+  padding-bottom: 35%;
+  padding-top: 1%; // не люблю такое, лучше пикселями
   background: url("../img/bg-footer.png") top/80% no-repeat;
   font-size: 18px;
   font-weight: 400;
-
 
   .footer-logo{
     display: block;
@@ -12,7 +12,6 @@
     text-decoration: none;
     text-align: center;
     color: #87949e;
-
   }
   .footer-nav{
     display: block;
@@ -26,11 +25,14 @@
 	 a{
 	   text-decoration: none;
 	   color: #87949e;
+       @include transition(0.3s);
+       &:hover{
+         color: $brand-color;
+         @include transition(0.3s);
+       }
 	 }
     }
-
   }
-
 }
 
 @media (min-width: 768px){

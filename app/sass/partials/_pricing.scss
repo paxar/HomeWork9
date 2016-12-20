@@ -11,43 +11,37 @@
   list-style: none;
   padding: 0;
   li {
-
     .pricing-list-wrapper{
       max-width: 345px;
       margin: 2% auto;
       background-color: white;
       border-radius: 5px;
       box-shadow: 0 0 35px rgba(227, 227, 227, 0.65);
-
     }
     .cost {
       display: block;
       padding-left: 10px;
       padding-top: 30px;
       color: $brand-color;
-      font-family: $font-secondary;
-      font-size: 60px;
-      font-weight: 200;
+      font: 200 60px $font-secondary;
     }
     .product {
       display: block;
       padding-left: 10px;
       padding-bottom: 40px;
       opacity: 0.45;
-      color: #87949e;
-      //font-family: "Proxima Nova";
       font-size: 18px;
       font-weight: 400;
       border-bottom: 2px solid #eeeff1;
+      color: #87949e;
     }
     p {
       margin: 0;
       padding: 40px 40px 40px 10px;
-      color: #87949e;
-      //font-family: "Proxima Nova";
       font-size: 18px;
       font-weight: 400;
       line-height: 48px;
+      color: #87949e;
     }
     a {
       display: block;
@@ -55,14 +49,11 @@
       text-decoration: none;
       text-transform: uppercase;
       background-color: $brand-color;
-      color: white;
-      //font-family: "Proxima Nova";
       font-size: 18px;
       font-weight: 700;
-
+      color: white;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
-
 
       &:hover {
         letter-spacing: 3px;
@@ -70,9 +61,7 @@
           margin-left: 45%;
           @include transition(1s);
         }
-
       }
-
     }
   }
 }

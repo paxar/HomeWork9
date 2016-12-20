@@ -17,22 +17,19 @@
   margin-top: 5%;
   list-style: none;
   padding: 0;
+
   .persons-list-item{
-    //display: inline-block;
     display: block;
     margin: 0 auto;
     padding: 2%;
-
     max-width: 750px;
-    //height: 400px;
-    //background-color: lightgray; //TEST
-    img{
 
+    img{
 	 max-width: 50%;
 	 margin: 0 auto;
 	 display: block;
-
     }
+
     .hover{
       position: absolute;
       top: 0;
@@ -44,22 +41,18 @@
       @include transition(0.5s);
       span{
         display: block;
-        color: white;
-        font-family: $font-secondary;
-        font-size: 36px;
-        font-weight: 200;
-        text-align: center;
         margin-top: 20%;
+        font: 200 36px $font-secondary;
+        text-align: center;
+        color: white;
       }
     }
     &:hover .hover{
       opacity: 1;
       height: 100%;
-
       @include transition(0.5s)
     }
   }
-
 }
 
 @media (min-width: 768px){
@@ -74,6 +67,5 @@
       }
     }
     }
-
   }
 }

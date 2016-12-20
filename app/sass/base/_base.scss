@@ -7,18 +7,23 @@ body{
 }
 
 .wrapper{
+  overflow: hidden;
   margin: 0 auto;
-  border: 1px dotted gray;
+  //border: 1px dotted gray; //TEST!
 }
+
 @media (min-width: 1170px) {
   .wrapper{
     max-width: 1500px;
   }
 }
+
 .wrapper-lg{
+  overflow: hidden;
   margin: 0 auto;
-  border: 1px dotted gray;
+  //border: 1px dotted gray; //TEST!
 }
+
 @media (min-width: 1170px) {
   .wrapper-lg{
     max-width: 2000px;

@@ -3,6 +3,7 @@
   padding: 1% 0;
 
   .navbar{
+    padding-bottom: 3%;
     h1{
 	 margin: 0;
       a{
@@ -12,10 +13,16 @@
   }
 
   .navbar-nav > li > a{
-    color: white;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
+    color: white;
+    @include transition(0.5s);
+
+    &:hover{
+      color: $brand-color;
+      @include transition(0.5s);
+    }
   }
 }
 

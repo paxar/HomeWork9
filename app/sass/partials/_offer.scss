@@ -3,11 +3,11 @@
   padding: 10% 0;
 
   p{
-    color: white;
     font-family: $font-secondary;
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 200; // используй сокращенную запись
     text-align: center;
+    color: white;
     span{
       font-weight: 700;
     }

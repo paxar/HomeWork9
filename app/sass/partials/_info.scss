@@ -1,25 +1,23 @@
 .info1,
 .info2,
-.info3{
+.info3{ // можно было бы придумать общий класс какой-то
   padding: 5% 0;
 
   img{
     display: block;
     max-width: 100%;
   }
-
-
-
   p{
-    color: #87949e;
-    font-family: $font-primary;
     font-size: 18px;
     font-weight: 400;
     line-height: 36px;
+    color: #87949e;
   }
 
   .button-std{
     margin: 8% auto;
+    text-decoration: none;
+    color: white;
   }
 
 }
